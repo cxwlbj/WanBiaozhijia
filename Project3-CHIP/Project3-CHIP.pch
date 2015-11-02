@@ -1,0 +1,57 @@
+//
+//  Project3-CHIP.pch
+//  Project3-CHIP
+//
+//  Created by imac on 15/9/27.
+//  Copyright (c) 2015年 Tianyaxu. All rights reserved.
+//
+
+#ifndef Project3_CHIP_Project3_CHIP_pch
+#define Project3_CHIP_Project3_CHIP_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#import "UIViewExt.h"
+#import "DataService.h"
+#import "MJRefresh.h"
+#import "UIImageView+WebCache.h"
+#import "UIView+ViewController.h"
+#import "MBProgressHUD.h"
+#import "UMSocial.h"
+
+//定义接口
+//获取滚动图片的接口
+#define kImage @"app/articleimage"
+//或取咨询的接口
+#define kList @"app/articlelist"
+//获取选品牌的接口
+#define kBrandList @"app/brandlist"
+//设置主URL
+#define Base_URL @"http://www.xbiao.com/"
+
+#define kSearch @"app/productsearch/"
+
+//获取城市列表
+#define kCity @"app/GetCityBybid/bid/"
+
+//获取论坛上的导航数据
+#define kNav @"bbs2/nav/loginid/0/loginkey/0"
+
+#define kProductList @"app/productList/"
+#define kProductDetail @"app/productDetail/"
+#define kShopMap @"app/shopMap/"
+//登录
+#define kLogin @"mobile/login"
+//发送建议
+#define kAdvise @"app/advise"
+
+#ifdef DEBUG
+#else
+#define NSLog(...) {};
+#endif
+
+#endif

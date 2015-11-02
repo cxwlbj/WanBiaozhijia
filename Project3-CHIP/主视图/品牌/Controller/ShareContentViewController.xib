@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShareContentViewController">
+            <connections>
+                <outlet property="countLabel" destination="GAj-pF-1MB" id="NYl-8c-kYC"/>
+                <outlet property="shareImgView" destination="aud-NG-1VK" id="u0a-iY-ZF7"/>
+                <outlet property="shareTextView" destination="Da7-yR-SLz" id="0d5-Zg-EuE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aud-NG-1VK">
+                    <rect key="frame" x="8" y="30" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="inG-uo-xBe"/>
+                        <constraint firstAttribute="height" constant="100" id="uDc-BI-ouh"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Da7-yR-SLz">
+                    <rect key="frame" x="120" y="10" width="180" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="2YM-RQ-9nm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还可以输入: 140个字" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAj-pF-1MB">
+                    <rect key="frame" x="131" y="239" width="170" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="SYH-Ry-fLU"/>
+                        <constraint firstAttribute="width" constant="170" id="s6K-kL-5Lr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Da7-yR-SLz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="1jV-53-L9a"/>
+                <constraint firstItem="aud-NG-1VK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="7yE-Cs-yeO"/>
+                <constraint firstItem="Da7-yR-SLz" firstAttribute="leading" secondItem="aud-NG-1VK" secondAttribute="trailing" constant="12" id="8GP-2d-vxA"/>
+                <constraint firstAttribute="trailing" secondItem="Da7-yR-SLz" secondAttribute="trailing" constant="20" id="Bbr-bU-4Ly"/>
+                <constraint firstItem="aud-NG-1VK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="NfG-RX-RL9"/>
+                <constraint firstItem="GAj-pF-1MB" firstAttribute="top" secondItem="Da7-yR-SLz" secondAttribute="bottom" constant="29" id="WeU-qq-fB1"/>
+                <constraint firstAttribute="trailing" secondItem="GAj-pF-1MB" secondAttribute="trailing" constant="19" id="gVg-1i-NLG"/>
+            </constraints>
+            <point key="canvasLocation" x="280" y="160"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
